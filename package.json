@@ -1,0 +1,21 @@
+{
+  "name": "akenza-logic-blocks",
+  "version": "1.0.0",
+  "description": "Examples for using custom logic blocks in akenza.",
+  "main": "index.js",
+  "directories": {
+    "logic-blocks": "logic-blocks"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "es-main": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
+}
