@@ -3,16 +3,16 @@
 // usage examples: aggregate/process the result(s) from the current script output in a different rule which is invoked after the current rule
 
 function consume(event) {
-    const temp = event.inputs['temperature'];
+    const temperature = event.inputs['temperature'];
     const humidity = event.inputs['humidity'];
 
     // do something with the data, i.e. calculate the dew-point which can then be used in another rule to trigger an action
     const constA = 17.625;
     const constB = 243.04;
     // calculate numerator of Td equation
-    const dewNumerator = constB * (Math.log(humidity / 100.0) + ((constA * eval(temp)) / (eval(temp) + constB)));
+    const dewNumerator = constB * (Math.log(humidity / 100.0) + ((constA * temperature) / (temperature + constB)));
     // calculate denominator of Td equation
-    const dewDenominator = constA - Math.log(humidity / 100.0) - ((constA * eval(temp)) / (eval(temp) + constB));
+    const dewDenominator = constA - Math.log(humidity / 100.0) - ((constA * temperature) / (temperature + constB));
     // calculate the dew point
     let dewPoint = dewNumerator / dewDenominator;
     // round dew
