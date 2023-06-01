@@ -25,6 +25,6 @@ function consume(event) {
             dewPoint
         },
         // NOTE: the topic defined here will overwrite the one specified in the output-connector. this is optional
-        topic: 'custom-topic'
+        topic: 'custom_topic'
     });
 }
