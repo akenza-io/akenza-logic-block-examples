@@ -15,8 +15,6 @@ function consume(event) {
     const dewDenominator = constA - Math.log(humidity / 100.0) - ((constA * eval(temp)) / (eval(temp) + constB));
     // calculate the dew point
     let dewPoint = dewNumerator / dewDenominator;
-    // convert dew to F
-    dewPoint = (dewPoint * (9 / 5)) + 32;
     // round dew
     dewPoint = Math.round(dewPoint);
 
