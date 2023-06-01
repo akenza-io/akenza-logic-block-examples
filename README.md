@@ -11,6 +11,8 @@ logic-blocks/
 └── alerts/
     ├── smart-temperature-alert.js         Example for an adaptive temperature alert.
     └── temperature-hysteresis-alert.js    Example for a temperature hysteresis alert.
+└── re-invoke rule engine/
+    └── reinvoke-rule-engine.js            Example on how the output should be structured for reinvocations of the rule-engine.
 ```
 
 
